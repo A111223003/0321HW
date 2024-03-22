@@ -35,16 +35,18 @@ public class MainActivity extends AppCompatActivity {
                 String successMessage = getString(R.string.login_success_message);
                 String Uerror = getString(R.string.USERNAME_error_message);
                 String Perror = getString(R.string.PASSWORD_error_message);
-                String error = getString(R.string.error_message);
+                String error1 = getString(R.string.error_message);
+                String error2 = getString(R.string.error2_message);
 
                 if (username.isEmpty() && password.isEmpty()) {
-                    Toast.makeText(MainActivity.this,error, Toast.LENGTH_SHORT).show();
-                } else if (!username.equals(DEFAULT_USERNAME) ) {
-                    Toast.makeText(MainActivity.this, Uerror, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this,error1, Toast.LENGTH_SHORT).show();
+                } else if (!password.equals(DEFAULT_PASSWORD)&&!username.equals(DEFAULT_USERNAME)){
+                    Toast.makeText(MainActivity.this, error2, Toast.LENGTH_SHORT).show();
                 } else if(!password.equals(DEFAULT_PASSWORD)){
                     Toast.makeText(MainActivity.this, Perror, Toast.LENGTH_SHORT).show();
-                }
-                else{
+                } else if(!username.equals(DEFAULT_USERNAME) ) {
+                        Toast.makeText(MainActivity.this, Uerror, Toast.LENGTH_SHORT).show();
+                }else{
                     Toast.makeText(MainActivity.this, successMessage, Toast.LENGTH_SHORT).show();
                 }
 

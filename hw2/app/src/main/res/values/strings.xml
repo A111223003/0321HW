@@ -4,4 +4,5 @@
     <string name="USERNAME_error_message">帳號錯誤，請重新輸入。</string>
     <string name="PASSWORD_error_message">密碼錯誤，請重新輸入。</string>
     <string name="error_message">請輸入帳號密碼。</string>
+    <string name="error2_message">帳號密碼錯誤，請重新輸入。</string>
 </resources>
