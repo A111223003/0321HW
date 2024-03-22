@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">hw</string>
+    <string name="login_success_message">登入成功！</string>
+    <string name="USERNAME_error_message">帳號錯誤，請重新輸入。</string>
+    <string name="PASSWORD_error_message">密碼錯誤，請重新輸入。</string>
+    <string name="error_message">請輸入帳號密碼。</string>
+</resources>
