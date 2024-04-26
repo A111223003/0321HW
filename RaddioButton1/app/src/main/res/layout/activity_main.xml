@@ -20,8 +20,8 @@
 
     <RadioGroup
         android:id="@+id/rgGender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="92dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="56dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,129 +29,97 @@
 
         <RadioButton
             android:id="@+id/rdbBoy"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="男" />
 
         <RadioButton
             android:id="@+id/rdbGirl"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="女" />
+
     </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/rgType"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="184dp"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RadioButton
-            android:id="@+id/rdbAdult"
-            android:layout_width="wrap_content"
-            android:layout_height="26dp"
-            android:text="全票" />
-
-        <RadioButton
-            android:id="@+id/rdbChild"
-            android:layout_width="match_parent"
-            android:layout_height="26dp"
-            android:text="兒童票" />
-
-        <RadioButton
-            android:id="@+id/rdbStudent"
-            android:layout_width="match_parent"
-            android:layout_height="26dp"
-            android:text="學生票" />
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="20dp"
-        android:onClick="button_Click"
-        android:text="選擇"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rgType" />
 
     <TextView
         android:id="@+id/lblOutput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="152dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="12dp"
         android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/check"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <RadioGroup
+        android:id="@+id/rgp"
+        android:layout_width="169dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toEndOf="@+id/rgGender"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/rdbAdult"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:text="全票(500)" />
+
+        <RadioButton
+            android:id="@+id/rdbStudent"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="學生票(400)" />
+
+        <RadioButton
+            android:id="@+id/rdbChild"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:text="兒童票(250)" />
+    </RadioGroup>
 
     <Button
         android:id="@+id/check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="96dp"
         android:text="確認"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/rgType" />
-
-    <TextView
-        android:id="@+id/num"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="60dp"
-        android:text="張數："
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/rgType"
-        app:layout_constraintStart_toEndOf="@+id/rgGender" />
-
-    <EditText
-        android:id="@+id/numText"
-        android:layout_width="74dp"
-        android:layout_height="45dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="56dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/rgType"
-        app:layout_constraintEnd_toEndOf="@+id/rgType" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="36dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
-        android:text="(500)"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="@+id/rgType"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rgGender" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="40dp"
-        android:text="(250)"
-        app:layout_constraintStart_toEndOf="@+id/rgGender"
-        app:layout_constraintTop_toBottomOf="@+id/num" />
+    <RadioGroup
+        android:id="@+id/rgp2"
+        android:layout_width="121dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="44dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/lblOutput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgGender"
+        app:layout_constraintVertical_bias="0.0">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="(400)"
-        app:layout_constraintEnd_toEndOf="@+id/rgType"
-        app:layout_constraintTop_toBottomOf="@+id/rgGender" />
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="張數："
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/numText"
+            android:layout_width="74dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:inputType="number" />
+    </RadioGroup>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

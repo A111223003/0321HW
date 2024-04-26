@@ -1,10 +1,14 @@
 package com.example.raddiobutton1;
 
-import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity2 extends MainActivity {
+public class MainActivity2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +21,18 @@ public class MainActivity2 extends MainActivity {
         int money = intent.getIntExtra("money", 0);
 
         // 在相應的TextView中顯示計算結果和其他相關信息
-        TextView output = (TextView) findViewById(R.id.outputTxv);
-        output.setText(output1+"金額："+money);
+        TextView output = findViewById(R.id.outputTxv);
+        output.setText(output1 + " 金額：" + money);
+
+        // 返回按鈕的點擊事件
+        Button backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 返回到 MainActivity
+                Intent intent = new Intent(MainActivity2.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

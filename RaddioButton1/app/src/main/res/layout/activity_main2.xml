@@ -17,4 +17,15 @@
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="98dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="64dp"
+        android:text="返回"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outputTxv" />
 </androidx.constraintlayout.widget.ConstraintLayout>
