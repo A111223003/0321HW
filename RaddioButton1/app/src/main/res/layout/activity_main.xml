@@ -10,7 +10,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="性別:"
+        android:text="@string/gender"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -20,8 +20,8 @@
 
     <RadioGroup
         android:id="@+id/rgGender"
-        android:layout_width="48dp"
-        android:layout_height="92dp"
+        android:layout_width="98dp"
+        android:layout_height="87dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="56dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,13 +32,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="男" />
+            android:text="@string/male" />
 
         <RadioButton
             android:id="@+id/rdbGirl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="女" />
+            android:text="@string/female" />
 
     </RadioGroup>
 
@@ -67,19 +67,19 @@
             android:id="@+id/rdbAdult"
             android:layout_width="141dp"
             android:layout_height="wrap_content"
-            android:text="全票(500)" />
+            android:text="@string/rdbAdult" />
 
         <RadioButton
             android:id="@+id/rdbStudent"
             android:layout_width="135dp"
             android:layout_height="wrap_content"
-            android:text="學生票(400)" />
+            android:text="@string/rdbStudent" />
 
         <RadioButton
             android:id="@+id/rdbChild"
             android:layout_width="139dp"
             android:layout_height="wrap_content"
-            android:text="兒童票(250)" />
+            android:text="@string/rdbChild" />
     </RadioGroup>
 
     <Button
@@ -88,7 +88,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="112dp"
         android:layout_marginEnd="96dp"
-        android:text="確認"
+        android:text="@string/confirm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rgGender" />
 
@@ -108,7 +108,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="張數："
+            android:text="@string/numberOfTickets"
             android:textSize="20sp" />
 
         <EditText
@@ -120,6 +120,18 @@
             android:ems="10"
             android:inputType="number" />
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/ticketTYpe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/ticketTYpe"
+        app:layout_constraintBottom_toTopOf="@+id/rgp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
