@@ -2,17 +2,83 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Spinner
+        android:id="@+id/order"
+        android:layout_width="281dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/food"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/order"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ListView
+        android:id="@+id/other"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/order"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ListView
+        android:id="@+id/drink"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/order"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/lblOutput"
+        android:layout_width="293dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="244dp"
+        android:text="主餐：請選擇"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order" />
+
+    <TextView
+        android:id="@+id/lblOutput2"
+        android:layout_width="289dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:text="附餐：請選擇"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/lblOutput"
+        app:layout_constraintStart_toStartOf="@+id/lblOutput"
+        app:layout_constraintTop_toBottomOf="@+id/lblOutput" />
+
+    <TextView
+        android:id="@+id/lblOutput3"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:text="飲料：請選擇"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/lblOutput2"
+        app:layout_constraintStart_toStartOf="@+id/lblOutput2"
+        app:layout_constraintTop_toBottomOf="@+id/lblOutput2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

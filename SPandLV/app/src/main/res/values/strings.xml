@@ -1,11 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SPandLV</string>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">SpandLV</string>
+    <string-array name="order">
+        <item>主餐</item>
+        <item>附餐</item>
+        <item>飲料</item>
+    </string-array>
+    <string-array name="food">
+        <item>漢堡</item>
+        <item>義大利麵</item>
+        <item>牛肉麵</item>
+    </string-array>
+    <string-array name="other">
+        <item>薯條</item>
+        <item>沙拉</item>
+        <item>玉米濃湯</item>
+        <item>蘋果派</item>
+    </string-array>
+    <string-array name="drink">
+        <item>可樂</item>
+        <item>雪碧</item>
+        <item>冰紅茶</item>
+    </string-array>
 </resources>

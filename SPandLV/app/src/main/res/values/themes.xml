@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.SPandLV" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.SpandLV" parent="Theme.Material3.DayNight.NoActionBar">
     </style>
     <style name="Theme.Action" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
@@ -15,5 +15,5 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-    <style name="Theme.SPandLV" parent="Theme.Action" />
+    <style name="Theme.SpandLV" parent="Theme.Action" />
 </resources>
