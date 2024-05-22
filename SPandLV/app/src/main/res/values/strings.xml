@@ -6,9 +6,10 @@
         <item>飲料</item>
     </string-array>
     <string-array name="food">
-        <item>漢堡</item>
-        <item>義大利麵</item>
-        <item>牛肉麵</item>
+        <item>牛肉漢堡</item>
+        <item>豬肉漢堡</item>
+        <item>炸雞漢堡</item>
+        <item>炸魚漢堡</item>
     </string-array>
     <string-array name="other">
         <item>薯條</item>
